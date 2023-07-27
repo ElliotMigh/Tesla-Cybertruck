@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_background"
+    android:clipToPadding="false"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_tesla_photography"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </ImageView>
+
+        <soup.neumorphism.NeumorphImageView
+            android:id="@+id/neumorphImageView"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:padding="26dp"
+            android:src="@drawable/ic_statics"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:neumorph_backgroundColor="@color/new_background"
+            app:neumorph_shadowColorDark="@color/new_shadow1"
+            app:neumorph_shadowColorLight="@color/new_shadow2"
+            app:neumorph_shadowElevation="4dp"
+            app:neumorph_shapeAppearance="@style/NeumorphismImage"
+            app:neumorph_shapeType="pressed">
+
+        </soup.neumorphism.NeumorphImageView>
+
+        <soup.neumorphism.NeumorphImageView
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:padding="26dp"
+            android:src="@drawable/ic_setting"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:neumorph_backgroundColor="@color/new_background"
+            app:neumorph_shadowColorDark="@color/new_shadow1"
+            app:neumorph_shadowColorLight="@color/new_shadow2"
+            app:neumorph_shadowElevation="4dp"
+            app:neumorph_shapeAppearance="@style/NeumorphismImage"
+            app:neumorph_shapeType="pressed">
+
+        </soup.neumorphism.NeumorphImageView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="26dp" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_tesla1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </ImageView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/btn_go_to_info_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:paddingStart="12dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:neumorph_backgroundColor="@color/new_background"
+        app:neumorph_shadowColorDark="@color/new_shadow1"
+        app:neumorph_shadowColorLight="@color/new_shadow2"
+        app:neumorph_shadowElevation="4dp"
+        app:neumorph_shapeAppearance="@style/NeumorphismCard"
+        app:neumorph_shapeType="flat">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_lock">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tap to open the car"
+                android:textColor="?attr/colorOnPrimary"
+                android:textSize="18sp">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+    </soup.neumorphism.NeumorphCardView>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cybertruck"
+            android:textColor="@color/white"
+            android:textSize="46sp">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Battery Remaining    "
+                android:textColor="@color/gray_text"
+                android:textSize="13sp">
+
+            </TextView>
+
+            <TextView
+                android:text="up to 4 hours"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distance Remaining    "
+                android:textColor="@color/gray_text"
+                android:textSize="13sp">
+
+            </TextView>
+
+            <TextView
+                android:text="up to 130 kilometrs"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

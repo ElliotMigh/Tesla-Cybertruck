@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="background_first">#353a40</color>
+    <color name="background_last">#16171b</color>
+    <color name="background_cards">#2c3036</color>
+
+
+    <color name="blue_light">#11a8fd</color>
+    <color name="blue_dark">#005ea3</color>
+
+
+    <color name="gray_text">#7f8489</color>
+
+
+    <color name="movieBackground">#313439</color>
+    <color name="movie_shadowLight">#424449</color>
+
+    <color name="shark">#191b1f</color>
+    <color name="movie_shadowLight2">#383a3e</color>
+    <color name="goldenrod">#f0c38e</color>
+
+    <color name="new_background">#1a1a1a</color>
+    <color name="new_shadow1">#b3000000</color>
+    <color name="new_shadow2">#b33a3a3a</color>
+
+    <color name="text_gray">#7f8489</color>
+    <color name="text_white">#fdfdfd</color>
+
+    <color name="icon_default_color">#7f8489</color>
+
+</resources>
