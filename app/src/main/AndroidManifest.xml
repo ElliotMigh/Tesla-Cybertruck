@@ -14,6 +14,9 @@
         android:theme="@style/Theme.TESLA"
         tools:targetApi="31">
         <activity
+            android:name=".ActivityDry"
+            android:exported="false" />
+        <activity
             android:name=".ActivityBattery"
             android:exported="false" />
         <activity

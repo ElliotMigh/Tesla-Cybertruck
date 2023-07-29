@@ -18,6 +18,9 @@ class ActivityInfoCyberTruck : AppCompatActivity() {
 
         //go to activity battery:
         goToBatteryActivity()
+
+        //go to dry activity:
+        goToDryActivity()
     }
 
     private fun goToBatteryActivity() {
@@ -26,13 +29,29 @@ class ActivityInfoCyberTruck : AppCompatActivity() {
             binding.neumorphBattery.setShapeType(ShapeType.PRESSED)
 
 //            edit icon tint color when clicked:
-                binding.neumorphBattery.setColorFilter(
-                    ContextCompat.getColor(this, R.color.blue_light),
-                    android.graphics.PorterDuff.Mode.SRC_IN
-                )
+            binding.neumorphBattery.setColorFilter(
+                ContextCompat.getColor(this, R.color.blue_light),
+                android.graphics.PorterDuff.Mode.SRC_IN
+            )
             //create intent for going another activity:
             val intentBattery = Intent(this, ActivityBattery::class.java)
             startActivity(intentBattery)
+        }
+    }
+
+    private fun goToDryActivity() {
+        binding.neumorphDry.setOnClickListener {
+            //edit shape type when clicked:
+            binding.neumorphDry.setShapeType(ShapeType.PRESSED)
+
+            //edit icon tint color when clicked:
+            binding.neumorphDry.setColorFilter(
+                ContextCompat.getColor(this,R.color.blue_light),
+                android.graphics.PorterDuff.Mode.SRC_IN
+            )
+            //create intent for going another activity:
+            val intentDry = Intent(this,ActivityDry::class.java)
+            startActivity(intentDry)
         }
     }
 }
