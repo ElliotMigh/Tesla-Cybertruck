@@ -31,7 +31,7 @@
             app:neumorph_shadowColorLight="@color/new_shadow2"
             app:neumorph_shadowElevation="4dp"
             app:neumorph_shapeAppearance="@style/NeumorphismImage"
-            app:neumorph_shapeType="pressed">
+            app:neumorph_shapeType="basin">
 
         </soup.neumorphism.NeumorphImageView>
 
@@ -49,7 +49,7 @@
             app:neumorph_shadowColorLight="@color/new_shadow2"
             app:neumorph_shadowElevation="4dp"
             app:neumorph_shapeAppearance="@style/NeumorphismImage"
-            app:neumorph_shapeType="pressed">
+            app:neumorph_shapeType="basin">
 
         </soup.neumorphism.NeumorphImageView>
 
