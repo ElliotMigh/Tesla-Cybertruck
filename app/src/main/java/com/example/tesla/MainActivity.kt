@@ -14,12 +14,17 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        Toast.makeText(this, "TESLA", Toast.LENGTH_SHORT).show()
+        //call welcome toast function:
+        welcomeToast()
 
         //go to activity info cybertruck:
         binding.btnGoToInfoActivity.setOnClickListener {
             val intentGoToInfoCyberTruck = Intent(this, ActivityInfoCyberTruck::class.java)
             startActivity(intentGoToInfoCyberTruck)
         }
+    }
+
+    private fun welcomeToast() {
+        Toast.makeText(this, "This is TESLA cybertruck", Toast.LENGTH_SHORT).show()
     }
 }
