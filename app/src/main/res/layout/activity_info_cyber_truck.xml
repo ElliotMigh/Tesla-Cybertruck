@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <soup.neumorphism.NeumorphImageView
-            android:id="@+id/neumorphImageView"
+            android:id="@+id/neumorphButtonAccount"
             android:layout_width="68dp"
             android:layout_height="68dp"
             android:padding="26dp"
@@ -36,6 +36,7 @@
         </soup.neumorphism.NeumorphImageView>
 
         <soup.neumorphism.NeumorphImageView
+            android:id="@+id/neumorphButtonRange"
             android:layout_width="68dp"
             android:layout_height="68dp"
             android:padding="26dp"
@@ -108,6 +109,7 @@
             android:orientation="horizontal">
 
             <soup.neumorphism.NeumorphCardView
+                android:id="@+id/cardEngine"
                 android:layout_width="170dp"
                 android:layout_height="170dp"
                 app:neumorph_backgroundColor="@color/new_background"
@@ -160,6 +162,7 @@
 
             <soup.neumorphism.NeumorphCardView
                 android:layout_width="170dp"
+                android:id="@+id/cardClimate"
                 android:layout_height="170dp"
                 app:neumorph_backgroundColor="@color/new_background"
                 app:neumorph_shadowColorDark="@color/new_shadow2"
@@ -211,6 +214,7 @@
 
             <soup.neumorphism.NeumorphCardView
                 android:layout_width="170dp"
+                android:id="@+id/cardTires"
                 android:layout_height="170dp"
                 app:neumorph_backgroundColor="@color/new_background"
                 app:neumorph_shadowColorDark="@color/new_shadow2"
@@ -261,6 +265,7 @@
 
             <soup.neumorphism.NeumorphCardView
                 android:layout_width="170dp"
+                android:id="@+id/cardPhone"
                 android:layout_height="170dp"
                 android:background="@drawable/card_background"
                 app:neumorph_backgroundColor="@color/new_background"
@@ -289,7 +294,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
                         android:layout_marginBottom="16dp"
-                        android:text="A/C is ON"
+                        android:text="Connected"
                         android:textColor="@color/gray_text"
                         android:textSize="14sp"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -300,7 +305,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="4dp"
-                        android:text="Climate"
+                        android:text="PHONE KEY"
                         android:textColor="@color/white"
                         android:textSize="18sp"
                         app:layout_constraintBottom_toTopOf="@+id/textView4"
@@ -319,7 +324,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/neumorphImageView2"
+        app:layout_constraintBottom_toTopOf="@+id/neumorphBattery"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
@@ -340,14 +345,14 @@
     </LinearLayout>
 
     <soup.neumorphism.NeumorphImageView
-        android:id="@+id/neumorphImageView2"
+        android:id="@+id/neumorphBattery"
         android:layout_width="68dp"
         android:layout_height="68dp"
         android:layout_marginBottom="26dp"
         android:padding="25dp"
         android:src="@drawable/ic_battery"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/neumorphImageView3"
+        app:layout_constraintEnd_toStartOf="@+id/neumorphDry"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:neumorph_backgroundColor="@color/new_background"
@@ -360,15 +365,15 @@
     </soup.neumorphism.NeumorphImageView>
 
     <soup.neumorphism.NeumorphImageView
-        android:id="@+id/neumorphImageView5"
+        android:id="@+id/neumorphProgram"
         android:layout_width="68dp"
         android:layout_height="68dp"
         android:padding="25dp"
         android:src="@drawable/ic_program"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/neumorphImageView4"
-        app:layout_constraintTop_toTopOf="@+id/neumorphImageView4"
+        app:layout_constraintStart_toEndOf="@+id/neumorphRange"
+        app:layout_constraintTop_toTopOf="@+id/neumorphRange"
         app:neumorph_backgroundColor="@color/new_background"
         app:neumorph_shadowColorDark="@color/new_shadow1"
         app:neumorph_shadowColorLight="@color/new_shadow2"
@@ -379,35 +384,34 @@
     </soup.neumorphism.NeumorphImageView>
 
     <soup.neumorphism.NeumorphImageView
-        android:id="@+id/neumorphImageView4"
+        android:id="@+id/neumorphRange"
         android:layout_width="68dp"
         android:layout_height="68dp"
         android:padding="25dp"
         android:src="@drawable/ic_range"
-        android:tint="@color/blue_light"
-        app:layout_constraintEnd_toStartOf="@+id/neumorphImageView5"
+        app:layout_constraintEnd_toStartOf="@+id/neumorphProgram"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/neumorphImageView3"
-        app:layout_constraintTop_toTopOf="@+id/neumorphImageView3"
+        app:layout_constraintStart_toEndOf="@+id/neumorphDry"
+        app:layout_constraintTop_toTopOf="@+id/neumorphDry"
         app:neumorph_backgroundColor="@color/new_background"
         app:neumorph_shadowColorDark="@color/new_shadow1"
         app:neumorph_shadowColorLight="@color/new_shadow2"
         app:neumorph_shadowElevation="4dp"
         app:neumorph_shapeAppearance="@style/NeumorphismCard"
-        app:neumorph_shapeType="pressed">
+        app:neumorph_shapeType="flat">
 
     </soup.neumorphism.NeumorphImageView>
 
     <soup.neumorphism.NeumorphImageView
-        android:id="@+id/neumorphImageView3"
+        android:id="@+id/neumorphDry"
         android:layout_width="68dp"
         android:layout_height="68dp"
         android:padding="25dp"
         android:src="@drawable/ic_dry"
-        app:layout_constraintEnd_toStartOf="@+id/neumorphImageView4"
+        app:layout_constraintEnd_toStartOf="@+id/neumorphRange"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/neumorphImageView2"
-        app:layout_constraintTop_toTopOf="@+id/neumorphImageView2"
+        app:layout_constraintStart_toEndOf="@+id/neumorphBattery"
+        app:layout_constraintTop_toTopOf="@+id/neumorphBattery"
         app:neumorph_backgroundColor="@color/new_background"
         app:neumorph_shadowColorDark="@color/new_shadow1"
         app:neumorph_shadowColorLight="@color/new_shadow2"
