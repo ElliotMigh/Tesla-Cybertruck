@@ -29,7 +29,7 @@
         </ImageView>
 
         <soup.neumorphism.NeumorphImageView
-            android:id="@+id/neumorphImageView"
+            android:id="@+id/neumorphButtonStatics"
             android:layout_width="68dp"
             android:layout_height="68dp"
             android:padding="26dp"
@@ -42,11 +42,12 @@
             app:neumorph_shadowColorLight="@color/new_shadow2"
             app:neumorph_shadowElevation="4dp"
             app:neumorph_shapeAppearance="@style/NeumorphismImage"
-            app:neumorph_shapeType="pressed">
+            app:neumorph_shapeType="basin">
 
         </soup.neumorphism.NeumorphImageView>
 
         <soup.neumorphism.NeumorphImageView
+            android:id="@+id/neumorphButtonSetting"
             android:layout_width="68dp"
             android:layout_height="68dp"
             android:padding="26dp"
@@ -59,7 +60,7 @@
             app:neumorph_shadowColorLight="@color/new_shadow2"
             app:neumorph_shadowElevation="4dp"
             app:neumorph_shapeAppearance="@style/NeumorphismImage"
-            app:neumorph_shapeType="pressed">
+            app:neumorph_shapeType="basin">
 
         </soup.neumorphism.NeumorphImageView>
 
@@ -153,9 +154,9 @@
         </TextView>
 
         <LinearLayout
-            android:layout_marginTop="6dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
             android:orientation="horizontal">
 
             <TextView
@@ -168,20 +169,20 @@
             </TextView>
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="up to 4 hours"
                 android:textColor="@color/white"
-                android:textSize="13sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:textSize="13sp">
 
             </TextView>
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_marginTop="4dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
             android:orientation="horizontal">
 
             <TextView
@@ -194,11 +195,11 @@
             </TextView>
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="up to 130 kilometrs"
                 android:textColor="@color/white"
-                android:textSize="13sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:textSize="13sp">
 
             </TextView>
 
