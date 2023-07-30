@@ -21,6 +21,12 @@ class ActivityInfoCyberTruck : AppCompatActivity() {
 
         //go to dry activity:
         goToDryActivity()
+
+        //go to range activity:
+        goToRangeActivity()
+
+        //go to program activity
+        goToProgramActivity()
     }
 
     private fun goToBatteryActivity() {
@@ -46,12 +52,46 @@ class ActivityInfoCyberTruck : AppCompatActivity() {
 
             //edit icon tint color when clicked:
             binding.neumorphDry.setColorFilter(
-                ContextCompat.getColor(this,R.color.blue_light),
+                ContextCompat.getColor(this, R.color.blue_light),
                 android.graphics.PorterDuff.Mode.SRC_IN
             )
             //create intent for going another activity:
-            val intentDry = Intent(this,ActivityDry::class.java)
+            val intentDry = Intent(this, ActivityDry::class.java)
             startActivity(intentDry)
+        }
+    }
+
+    private fun goToRangeActivity() {
+        binding.neumorphRange.setOnClickListener {
+            //edit shape type when clicked:
+            binding.neumorphRange.setShapeType(ShapeType.PRESSED)
+
+            //edit icon tit color when clicked:
+            binding.neumorphRange.setColorFilter(
+                ContextCompat.getColor(this, R.color.blue_light),
+                android.graphics.PorterDuff.Mode.SRC_IN
+            )
+
+            //create intent for going another activity:
+            val intentRange = Intent(this, ActivityRange::class.java)
+            startActivity(intentRange)
+        }
+    }
+
+    private fun goToProgramActivity() {
+        binding.neumorphProgram.setOnClickListener {
+            //edit shape type when clicked:
+            binding.neumorphProgram.setShapeType(ShapeType.PRESSED)
+
+            //edit icon tint color when clicked:
+            binding.neumorphProgram.setColorFilter(
+                ContextCompat.getColor(this, R.color.blue_light),
+                android.graphics.PorterDuff.Mode.SRC_IN
+            )
+
+            //create intent for going another activity:
+            val intentProgram = Intent(this, ActivityProgram::class.java)
+            startActivity(intentProgram)
         }
     }
 }
