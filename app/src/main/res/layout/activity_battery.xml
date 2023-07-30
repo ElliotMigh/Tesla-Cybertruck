@@ -10,11 +10,93 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="138dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="10dp"
+        android:layout_width="109dp"
+        android:layout_height="38dp"
         android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_tesla_photography" />
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/cardEngine"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="170dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:neumorph_backgroundColor="@color/new_background"
+        app:neumorph_shadowColorDark="@color/new_shadow2"
+        app:neumorph_shadowColorLight="@color/new_shadow1"
+        app:neumorph_shadowElevation="4dp"
+        app:neumorph_shapeAppearance="@style/NeumorphismCard"
+        app:neumorph_shapeType="basin"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/card_background">
+
+            <ImageView
+                android:id="@+id/imgCheckingEngine"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/txtSleepingMode"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_battery" />
+
+            <TextView
+                android:id="@+id/txtEngine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="16dp"
+                android:ellipsize="end"
+                android:lineSpacingExtra="6dp"
+                android:maxLines="8"
+                android:padding="5dp"
+                android:text="The official news is that the Tesla Cybertruck will be equipped with Tesla's 4680-type cylindrical battery cells - an improved version, with a 10 percent higher energy density than in the case of the Tesla Model Y AWD (the first and only 4680-powered BEV so far)."
+                android:textColor="@color/gray_text"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/txtSleepingMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="4dp"
+                android:text="Battery"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/txtEngine"
+                app:layout_constraintStart_toStartOf="@+id/txtEngine" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="260dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/img_cybertruck_3_prev_ui" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
