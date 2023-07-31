@@ -11,5 +11,10 @@ class ActivityBattery : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityBatteryBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        //click on back button:
+        binding.neumorphBackButton.setOnClickListener {
+            onBackPressed()
+        }
     }
 }

@@ -112,7 +112,7 @@
         </ImageView>
 
         <soup.neumorphism.NeumorphImageView
-            android:id="@+id/neumorphButtonStatics"
+            android:id="@+id/neumorphBackButton"
             android:layout_width="68dp"
             android:layout_height="68dp"
             android:padding="26dp"
