@@ -3,20 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/new_background"
     android:layout_height="match_parent"
+    android:background="@color/new_background"
     tools:context=".ActivityBattery">
 
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="109dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_tesla_photography" />
+
 
 
     <soup.neumorphism.NeumorphCardView
@@ -89,14 +81,56 @@
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
-        android:layout_height="260dp"
+        android:layout_height="250dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="136dp"
         android:layout_marginEnd="10dp"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_cybertruck_3_prev_ui" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_tesla_photography"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </ImageView>
+
+        <soup.neumorphism.NeumorphImageView
+            android:id="@+id/neumorphButtonStatics"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:padding="26dp"
+            android:src="@drawable/ic_back_cybertruck"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:neumorph_backgroundColor="@color/new_background"
+            app:neumorph_shadowColorDark="@color/new_shadow1"
+            app:neumorph_shadowColorLight="@color/new_shadow2"
+            app:neumorph_shadowElevation="4dp"
+            app:neumorph_shapeAppearance="@style/NeumorphismImage"
+            app:neumorph_shapeType="basin">
+
+        </soup.neumorphism.NeumorphImageView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
