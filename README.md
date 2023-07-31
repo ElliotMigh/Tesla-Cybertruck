@@ -3,5 +3,5 @@ Welcome to tesla cybertruck,In this application, I tried to work with neomorphis
 
 
 
-<img width="700" src="![sc_tesla_1](https://github.com/ElliotMigh/Tesla-Cybertruck/assets/87560931/eef24824-67d2-4e81-ad0b-88345ca8db86)
-">
+![sc_tesla_1](https://github.com/ElliotMigh/Tesla-Cybertruck/assets/87560931/eef24824-67d2-4e81-ad0b-88345ca8db86)
+
